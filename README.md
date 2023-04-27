@@ -2,9 +2,11 @@
 
 ###Technologies Used:
 
-Language: Go
-Database: Redis
-Docker
+Language: `Go`
+
+Database: `Redis`
+
+`Docker`
 
 How to use:
 
