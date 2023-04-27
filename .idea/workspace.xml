@@ -7,6 +7,12 @@
     <list default="true" id="14abecb6-0adf-4225-9e3f-9d24cca4226c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/console/console.go" beforeDir="false" afterPath="$PROJECT_DIR$/console/console.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/objectdb.go" beforeDir="false" afterPath="$PROJECT_DIR$/db/objectdb.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/animal.go" beforeDir="false" afterPath="$PROJECT_DIR$/model/animal.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/object.go" beforeDir="false" afterPath="$PROJECT_DIR$/model/object.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/person.go" beforeDir="false" afterPath="$PROJECT_DIR$/model/person.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,18 +104,8 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">
           <url>file://$PROJECT_DIR$/db/objectdb.go</url>
-          <line>181</line>
+          <line>20</line>
           <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/db/objectdb.go</url>
-          <line>102</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/db/objectdb.go</url>
-          <line>144</line>
-          <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

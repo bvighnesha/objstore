@@ -1,4 +1,4 @@
-package obj
+package model
 
 type Object interface {
 	// GetKind returns the type of the object.

@@ -5,7 +5,7 @@ import (
 	"encoding/json"
 	"fmt"
 	"objstore/db"
-	"objstore/obj"
+	"objstore/model"
 	"strings"
 )
 
@@ -20,12 +20,12 @@ func Start(db *db.DB) {
 		var data string
 		fmt.Scanln(&data)
 
-		var object obj.Object
+		var object model.Object
 
-		var person obj.Person
+		var person model.Person
 		err := json.Unmarshal([]byte(data), &person)
 		if err != nil {
-			var animal obj.Animal
+			var animal model.Animal
 			err := json.Unmarshal([]byte(data), &animal)
 			if err != nil {
 				fmt.Errorf("failed to unmarshal object: %w", err)

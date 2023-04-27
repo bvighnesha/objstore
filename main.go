@@ -12,7 +12,7 @@ func main() {
 	db := db.NewObjectDB(fmt.Sprintf("%s:%s", host, port))
 	console.Start(db)
 
-	/*err := db.Store(context.Background(), &obj.Person{
+	/*err := db.Store(context.Background(), &model.Person{
 		Name:      "test5",
 		LastName:  "Bojja",
 		Birthday:  "04-11-1989",
@@ -21,12 +21,12 @@ func main() {
 
 	//fmt.Println(err)
 
-	/*obj, err := db.ListObjects(context.Background(), "person")
+	/*model, err := db.ListObjects(context.Background(), "person")
 	fmt.Println("ListObjects", err)
-	fmt.Println(obj)
+	fmt.Println(model)
 	obj1, err := db.GetObjectByName(context.Background(), "test")
 	fmt.Println("GetObjectByName", err)
 	fmt.Println(obj1.GetName())*/
-	//err = db.DeleteObject(context.Background(), obj[0].GetID())
+	//err = db.DeleteObject(context.Background(), model[0].GetID())
 	//fmt.Println("DeleteObject", err)
 }
