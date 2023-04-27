@@ -17,7 +17,8 @@ To set object in the store:
 
 SET
 
-``` JSON {
+``` JSON 
+{
 "Name":      "test",
 "LastName":  "Bojja",
 "Birthday":  "04-11-1989",
