@@ -8,9 +8,9 @@ import (
 type Person struct {
 	Name      string    `json:"name"`
 	ID        string    `json:"id"`
-	LastName  string    `json:”last_name”`
-	Birthday  string    `json:”birthday”`
-	BirthDate time.Time `json:”birthday”`
+	LastName  string    `json:"last_name"`
+	Birthday  string    `json:"birthday"`
+	BirthDate time.Time `json:"birthday"`
 }
 
 func (p *Person) GetKind() string {

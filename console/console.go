@@ -59,7 +59,12 @@ func Start(db *db.DB) {
 			fmt.Println("Please provide an ID to get")
 			var id string
 			fmt.Scanln(&id)
-			db.GetObjectByID(context.Background(), id)
+			o, err := db.GetObjectByID(context.Background(), id)
+			if err != nil {
+				fmt.Println(err)
+				return
+			}
+			fmt.Println(o)
 
 		default:
 			fmt.Println("Unknown command:", kind)

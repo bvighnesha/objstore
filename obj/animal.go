@@ -5,8 +5,8 @@ import "reflect"
 type Animal struct {
 	Name    string `json:"name"`
 	ID      string `json:"id"`
-	Type    string `json:”type”`
-	OwnerID string `json:”owner_id”`
+	Type    string `json:"type"`
+	OwnerID string `json:"owner_id"`
 }
 
 func (p *Animal) GetKind() string {

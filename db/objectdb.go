@@ -7,6 +7,7 @@ import (
 	"github.com/go-redis/redis/v8"
 	"github.com/google/uuid"
 	"objstore/obj"
+	"strings"
 )
 
 type ObjectDB interface {
@@ -55,6 +56,7 @@ func (db *DB) Store(ctx context.Context, object obj.Object) error {
 		return fmt.Errorf("failed to marshal object: %w", err)
 	}
 	key := fmt.Sprintf("%s:%s:%s", object.GetKind(), object.GetName(), id)
+	fmt.Println(key)
 	err = db.client.Set(ctx, key, b, 0).Err()
 	if err != nil {
 		return fmt.Errorf("failed to store object in Redis: %w", err)
@@ -99,7 +101,7 @@ func (db *DB) GetObjectByID(ctx context.Context, id string) (obj.Object, error) 
 // The object will be retrieved from Redis using the name.
 func (db *DB) GetObjectByName(ctx context.Context, name string) (obj.Object, error) {
 	var object obj.Object
-	keys, err := db.client.Keys(ctx, "*:"+name+":*").Result()
+	keys, err := db.client.Keys(ctx, fmt.Sprintf("*:%s:*", strings.TrimSpace(name))).Result()
 	if err != nil {
 		return object, fmt.Errorf("failed to get object keys: %w", err)
 	}
