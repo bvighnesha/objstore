@@ -14,27 +14,39 @@ When applican start it will ask for the following options:
 Please provide a command: SET, GET, LIST or DEL
 
 To set object in the store:
+
 SET
-`{
+
+``` JSON {
 "Name":      "test",
 "LastName":  "Bojja",
 "Birthday":  "04-11-1989",
 "BirthDate": "2021-02-18T21:54:42.123Z"
-}`
+}
+```
 
 NOTE: name is unique
 
 GET
+
 Do you want to get by name or ID?
+
 Choose ID or NAME
+
 Example: ID
+
 And enter name like `test` 
 
 LIST
+
 Please provide a kind to list
+
 person or animal
+
 Example: person
 
 DEL
+
 Please provide a id to delete
+
 Example: `21082c45-36b8-4ed0-9131-34036a0dc8b6`
