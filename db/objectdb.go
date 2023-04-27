@@ -29,10 +29,10 @@ type DB struct {
 }
 
 // NewObjectDB returns a new ObjectDB.
-func NewObjectDB() *DB {
+func NewObjectDB(address string) *DB {
 	return &DB{
 		client: redis.NewClient(&redis.Options{
-			Addr: "localhost:6379",
+			Addr: address,
 		}),
 	}
 }
