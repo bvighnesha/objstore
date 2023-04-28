@@ -26,12 +26,7 @@ To set object in the store:
 `SET`
 
 ``` JSON 
-{
-"Name":      "test",
-"LastName":  "Bojja",
-"Birthday":  "04-11-1989",
-"BirthDate": "2021-02-18T21:54:42.123Z"
-}
+{"Name":"Vighnesha","LastName":"Bojja","Birthday":"04-11-1989","BirthDate":"2021-02-18T21:54:42.123Z"}
 ```
 
 `NOTE: name is unique`

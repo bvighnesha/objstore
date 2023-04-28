@@ -27,7 +27,7 @@ func Start(db *db.DB) {
 		var object model.Object
 
 		var person model.Person
-		err := json.Unmarshal([]byte(data), &person)
+		err := json.Unmarshal([]byte(strings.Trim(data, "`")), &person)
 		if err != nil {
 			var animal model.Animal
 			err := json.Unmarshal([]byte(data), &animal)
