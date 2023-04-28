@@ -5,12 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="14abecb6-0adf-4225-9e3f-9d24cca4226c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/redis.go" beforeDir="false" afterPath="$PROJECT_DIR$/db/redis.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test" beforeDir="false" afterPath="$PROJECT_DIR$/test" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/redis_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/db/redis_test.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +42,7 @@
     "RunOnceActivity.go.migrated.go.modules.settings": "true",
     "RunOnceActivity.go.modules.go.list.on.any.changes.was.set": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "tests",
+    "git-widget-placeholder": "main",
     "go.import.settings.migrated": "true",
     "last_opened_file_path": "/Users/vighnesha/work/objstore",
     "node.js.detected.package.eslint": "true",
@@ -67,7 +62,7 @@
       <recent name="$PROJECT_DIR$/obj" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Build.go build objstore">
+  <component name="RunManager" selected="Go Test.TestGetObjectByNameError in objstore/db">
     <configuration name="go build objstore" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="objstore" />
       <working_directory value="$PROJECT_DIR$" />
@@ -89,7 +84,7 @@
       <pattern value="^\QTestDeleteObject\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="TestGetObjectByID in objstore/db" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="TestGetObjectByIDError in objstore/db" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="objstore" />
       <working_directory value="$PROJECT_DIR$/db" />
       <root_directory value="$PROJECT_DIR$" />
@@ -98,7 +93,7 @@
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
       <framework value="gotest" />
-      <pattern value="^\QTestGetObjectByID\E$" />
+      <pattern value="^\QTestGetObjectByIDError\E$" />
       <method v="2" />
     </configuration>
     <configuration name="TestGetObjectByName in objstore/db" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
@@ -113,7 +108,7 @@
       <pattern value="^\QTestGetObjectByName\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="TestStore in objstore/db" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="TestGetObjectByNameError in objstore/db" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="objstore" />
       <working_directory value="$PROJECT_DIR$/db" />
       <root_directory value="$PROJECT_DIR$" />
@@ -122,16 +117,16 @@
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
       <framework value="gotest" />
-      <pattern value="^\QTestStore\E$" />
+      <pattern value="^\QTestGetObjectByNameError\E$" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Test.TestGetObjectByNameError in objstore/db" />
+        <item itemvalue="Go Test.TestGetObjectByIDError in objstore/db" />
         <item itemvalue="Go Build.go build objstore" />
         <item itemvalue="Go Test.TestDeleteObject in objstore/db" />
         <item itemvalue="Go Test.TestGetObjectByName in objstore/db" />
-        <item itemvalue="Go Test.TestGetObjectByID in objstore/db" />
-        <item itemvalue="Go Test.TestStore in objstore/db" />
       </list>
     </recent_temporary>
   </component>
