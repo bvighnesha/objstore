@@ -19,7 +19,7 @@ Start the application by running the following command:
 4. Run the application
 
 When application start it will ask for the following options:
-Please provide a command:  `SET`, `GET`, `LIST` or `DEL`
+Please provide a command:  `SET`, `GET`, `LIST`, `DEL` or `QUIT`
 
 To set object in the store:
 
