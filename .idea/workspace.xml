@@ -109,7 +109,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">
           <url>file://$PROJECT_DIR$/console/console.go</url>
-          <line>22</line>
+          <line>23</line>
           <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>

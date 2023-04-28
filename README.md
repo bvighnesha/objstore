@@ -39,7 +39,7 @@ Choose `ID` or `NAME`
 
 Example: `ID`
 
-And enter name like `test` 
+And enter name like `test`
 
 `LIST`
 
@@ -54,3 +54,7 @@ Example: `person`
 Please provide a ID to delete
 
 Example: `21082c45-36b8-4ed0-9131-34036a0dc8b6`
+
+`QUIT`
+
+To quit the application
