@@ -25,7 +25,9 @@ func NewObjectDB(address string) *DB {
 // Store will store the object in the data store. The object will have a name
 // and kind, and the Store method should create a unique ID.
 func (db *DB) Store(ctx context.Context, object model.Object) error {
-
+	if object.GetName() == "" {
+		return fmt.Errorf("object name cannot be empty")
+	}
 	keys, err := db.client.Keys(ctx, "*:"+object.GetName()+":*").Result()
 	if err != nil {
 		return fmt.Errorf("failed to get object keys: %w", err)
@@ -52,6 +54,9 @@ func (db *DB) Store(ctx context.Context, object model.Object) error {
 // GetObjectByID will retrieve the object with the provided ID.
 // The object will be retrieved from Redis using the ID.
 func (db *DB) GetObjectByID(ctx context.Context, id string) (model.Object, error) {
+	if id == "" {
+		return nil, fmt.Errorf("id cannot be empty")
+	}
 	var object model.Object
 	keys, err := db.client.Keys(ctx, "*:"+id).Result()
 	if err != nil {
@@ -85,6 +90,9 @@ func (db *DB) GetObjectByID(ctx context.Context, id string) (model.Object, error
 // GetObjectByName will retrieve the object with the given name.
 // The object will be retrieved from Redis using the name.
 func (db *DB) GetObjectByName(ctx context.Context, name string) (model.Object, error) {
+	if name == "" {
+		return nil, fmt.Errorf("name cannot be empty")
+	}
 	var object model.Object
 	fmt.Println(name)
 	keys, err := db.client.Keys(ctx, "*"+name+"*").Result()
@@ -128,6 +136,9 @@ func (db *DB) GetObjectByName(ctx context.Context, name string) (model.Object, e
 // ListObjects will return a list of all objects of the given kind.
 // The objects will be retrieved from Redis using the kind.
 func (db *DB) ListObjects(ctx context.Context, kind string) ([]model.Object, error) {
+	if kind == "" {
+		return nil, fmt.Errorf("kind cannot be empty")
+	}
 	var objects []model.Object
 	keys, err := db.client.Keys(ctx, "*").Result()
 	if err != nil {
