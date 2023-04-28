@@ -9,6 +9,10 @@ import (
 	"strings"
 )
 
+// Start will start the console.
+// The console will prompt the user for a command, and then prompt for the
+// required data for that command.
+// The console will then call the appropriate function on the DB.
 func Start(db *db.DB) {
 	fmt.Println("Please provide a command: SET, GET, LIST or DEL")
 	var command string

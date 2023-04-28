@@ -5,6 +5,7 @@ import (
 	"github.com/spf13/viper"
 )
 
+// ReadConfig reads the config file and returns the host and port.
 func ReadConfig() (host, port string) {
 	// Set up Viper
 	viper.SetConfigName("redis") // Name of config file (without extension)
