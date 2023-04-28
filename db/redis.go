@@ -7,7 +7,6 @@ import (
 	"github.com/go-redis/redis/v8"
 	"github.com/google/uuid"
 	"objstore/model"
-	"strings"
 )
 
 type DB struct {
@@ -87,7 +86,8 @@ func (db *DB) GetObjectByID(ctx context.Context, id string) (model.Object, error
 // The object will be retrieved from Redis using the name.
 func (db *DB) GetObjectByName(ctx context.Context, name string) (model.Object, error) {
 	var object model.Object
-	keys, err := db.client.Keys(ctx, fmt.Sprintf("*:%s:*", strings.TrimSpace(name))).Result()
+	fmt.Println(name)
+	keys, err := db.client.Keys(ctx, "*"+name+"*").Result()
 	if err != nil {
 		return object, fmt.Errorf("failed to get object keys: %w", err)
 	}
